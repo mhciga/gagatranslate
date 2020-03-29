@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>translate</title>
+<style>
+    .background{
+        width:100%;
+        display:flex;
+        justify-content:center; 
+        align-items:center;
+    }
+    .titleName{
+        width:360px;
+        height:60px;        
+
+        display:flex;
+        justify-content:center; 
+        align-items:center;
+        font-weight: bolder;
+        font-size:24px;
+        font-family:Microsoft JhengHei;
+        border-radius: 10px;
+    }
+
+
+.output{
+    width:360px;
+    height:60px;        
+    background-color: rgb(60, 58, 63);
+    color:rgb(231, 211, 25);
+    justify-content:center; 
+    align-items:center;
+    font-size:20px;
+    font-family:Microsoft JhengHei;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.output:hover{
+    opacity: 1;
+}
+
+.outputUnlick{
+    width:360px;
+    height:60px;        
+    background-color: rgb(60, 58, 63);
+    color:rgb(231, 211, 25);
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    font-size:20px;
+    font-family:Microsoft JhengHei;
+    border-radius: 10px;    
+    position: absolute;left:0px; top:0px; 
+}
+
+.outputClick{
+    width:360px; 
+    height:60px;
+    background-color:rgb(170, 29, 76); 
+    color:ivory;
+    display:flex;
+    justify-content:center; 
+    align-items:center;
+    font-size:20px;
+    font-family:Microsoft JhengHei;
+    border-radius: 10px;    
+    position: absolute;left:0px; top:0px; 
+}
+
+.btn{
+        width:10%;
+        display:flex;
+        justify-content:center; 
+        align-items:center;
+        background-color: gold;
+        text-align: center;
+        font-family:Microsoft JhengHei;
+        margin-top: 10px;
+        font-size:20px;
+        border-radius: 10px;    
+
+    }
+</style>
+</head>
+<body>
+<div class="background">
+    <div class="titleName">瓜言呱語翻譯蒟蒻</div>
+</div>
+    <div class="background">
+        <div class="input" ></div>
+        <span class="output" onclick="clickhug()">
+            <div class="outputUnlick">姊我想妳</div>
+            <div class="outputClick" id="hugSis">我想抱抱妳~</div>
+        </span>
+    </div>
+    <div class="background">
+        <div class="input" ></div>
+        <span class="output" onclick="clickkiss()">
+            <div class="outputUnlick">姊妳好美</div>
+            <div class="outputClick" id="kissSis">我想親親妳~</div>
+        </span>
+    </div>
+    <div class="background">
+        <div class="input" ></div>
+        <span class="output" onclick="clicktouch()">
+            <div class="outputUnlick">姊真的很性感</div>
+            <div class="outputClick" id="touchSis">我想摸摸妳~</div>
+        </span>
+    </div>
+    <div class="background">
+        <div class="input" ></div>
+        <span class="output" onclick="clicksex()">
+            <div class="outputUnlick">我喜歡姊的身體</div>
+            <div class="outputClick" id="sexSis">我超想跟妳做愛的啦！</div>
+        </span>
+    </div>
+    <div class="background">
+        <div class="input" ></div>
+        <span class="output" onclick="clickdiy()">
+            <div class="outputUnlick">我想跟妳做愛</div>
+            <div class="outputClick" id="diySis">我要去自己解決了...</div>
+        </span>
+    </div>
+    <div class="background">
+        <button class="btn" onclick="clickReload()">RELOAD</button>
+    </div>
+</body>
+
+<script>
+let hug = window.document.getElementById("hugSis");
+let kiss = window.document.getElementById("kissSis");
+let touch = window.document.getElementById("touchSis");
+let sex = window.document.getElementById("sexSis");
+let diy = window.document.getElementById("diySis");
+
+hug.style.opacity = "0";
+kiss.style.opacity = "0";
+touch.style.opacity = "0";
+sex.style.opacity = "0";
+diy.style.opacity = "0";
+
+
+function clickhug(){
+    hug.style.opacity = "1";
+    kiss.style.opacity = "0";
+    touch.style.opacity = "0";
+    sex.style.opacity = "0";
+    diy.style.opacity = "0";
+}
+
+function clickkiss(){
+    hug.style.opacity = "0";
+    kiss.style.opacity = "1";
+    touch.style.opacity = "0";
+    sex.style.opacity = "0";
+    diy.style.opacity = "0";
+}
+
+function clicktouch(){
+    hug.style.opacity = "0";
+    kiss.style.opacity = "0";
+    touch.style.opacity = "1";
+    sex.style.opacity = "0";
+    diy.style.opacity = "0";
+}
+
+function clicksex(){
+    hug.style.opacity = "0";
+    kiss.style.opacity = "0";
+    touch.style.opacity = "0";
+    sex.style.opacity = "1";
+    diy.style.opacity = "0";
+}
+
+function clickdiy(){
+    hug.style.opacity = "0";
+    kiss.style.opacity = "0";
+    touch.style.opacity = "0";
+    sex.style.opacity = "0";
+    diy.style.opacity = "1";
+}
+
+function clickReload(){
+    hug.style.opacity = "0";
+    kiss.style.opacity = "0";
+    touch.style.opacity = "0";
+    sex.style.opacity = "0";
+    diy.style.opacity = "0";
+}
+
+</script>
+</html>
